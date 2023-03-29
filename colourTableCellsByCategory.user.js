@@ -5,8 +5,8 @@
 // @author        ChatGPT, AcesFullOfKings, TheJzoli
 // @grant         none
 // @match         https://sb.ltn.fi/*
-// @updateURL     https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.js
-// @downloadURL   https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.js
+// @updateURL     https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
+// @downloadURL   https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
 // ==/UserScript==
 
 /* eslint-disable no-multi-spaces */
