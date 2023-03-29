@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Colour Table Cells by Category
+// @name          Coloured Categories
 // @description   Adds category colours to Category column sb.ltn.fi
 // @version       1.0
 // @author        ChatGPT, AcesFullOfKings
