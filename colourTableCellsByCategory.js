@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          Coloured Categories
 // @description   Adds category colours to Category column sb.ltn.fi
-// @version       1.0
-// @author        ChatGPT, AcesFullOfKings
+// @version       1.1
+// @author        ChatGPT, AcesFullOfKings, TheJzoli
 // @grant         none
 // @match         https://sb.ltn.fi/*
 // @updateURL     https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.js
@@ -24,6 +24,7 @@
     preview: '#008fd6',         // middle blue
     poi_highlight: '#ff1684',   // kinda salmon-y pink idk
     exclusive_access: '#008a5c',// kinda murky greeny grey ish
+    chapter: '#ffd679',
   };
 
   const table = document.querySelector('.table');
@@ -47,17 +48,26 @@
       }
   });
 
-  const rows = table.querySelectorAll('tbody tr'); // a list of the table rows
+  addSquare();
 
-  rows.forEach((row) => {
-    const categoryCell = row.querySelectorAll('td')[columnNumber]; // select the correct column
-    const category = categoryCell.innerText.split("\n")[0]; // sometimes userscripts add a line below the category text, e.g. for a button
+  function addSquare() {
+    const rows = table.querySelectorAll('tbody tr'); // a list of the table rows
 
-    if (category in COLOURS) {
-      var newSpan = document.createElement('span');
-      newSpan.innerHTML = "■"; // lil squarey boi
-      newSpan.setAttribute('style', 'color:' + COLOURS[category]);
-      categoryCell.prepend(newSpan); // add to beginning of cell
-    }
-  });
+    rows.forEach((row) => {
+      const categoryCell = row.querySelectorAll('td')[columnNumber]; // select the correct column
+      let category = categoryCell.innerText.split("\n")[0]; // sometimes userscripts add a line below the category text, e.g. for a button
+      if (category.charAt(0) === "■") category = category.substring(1);
+
+      if (category in COLOURS) {
+        var newSpan = document.createElement('span');
+        newSpan.id = "colorSquare";
+        newSpan.innerHTML = "■"; // cute lil square
+        newSpan.setAttribute('style', 'color:' + COLOURS[category]);
+        categoryCell.querySelector('#colorSquare')?.remove();
+        categoryCell.prepend(newSpan); // add to beginning of cell
+      }
+    });
+  }
+
+  document.addEventListener('forceRefresh', () => addSquare());
 })();
