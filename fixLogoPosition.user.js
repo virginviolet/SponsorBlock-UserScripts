@@ -6,6 +6,8 @@
 // @grant         none
 // @author        ChatGPT
 // @match         https://sb.ltn.fi/*
+// @updateURL     https://github.com/theonefoster/SponsorBlock-UserScripts/raw/main/fixLogoPosition.user.js
+// @downloadURL   https://github.com/theonefoster/SponsorBlock-UserScripts/raw/main/fixLogoPosition.user.js
 // ==/UserScript==
 
 (function() {
