@@ -7,7 +7,7 @@
 // @match         https://sb.ltn.fi/*
 // @updateURL     https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
 // @downloadURL   https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
-// @icon         https://sb.ltn.fi/static/browser/logo.png
+// @icon          https://sb.ltn.fi/static/browser/logo.png
 // ==/UserScript==
 
 /* eslint-disable no-multi-spaces */
