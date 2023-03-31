@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name          Coloured Categories
 // @description   Adds category colours to Category column sb.ltn.fi
-// @version       1.1
+// @version       1.1.1
 // @author        ChatGPT, AcesFullOfKings, TheJzoli
 // @grant         none
 // @match         https://sb.ltn.fi/*
 // @updateURL     https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
 // @downloadURL   https://raw.githubusercontent.com/theonefoster/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
+// @icon         https://sb.ltn.fi/static/browser/logo.png
 // ==/UserScript==
 
 /* eslint-disable no-multi-spaces */
