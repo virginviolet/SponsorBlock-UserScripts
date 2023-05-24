@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Coloured Categories
 // @description   Adds category colours to Category column sb.ltn.fi
-// @version       1.1.1
+// @version       1.1.2
 // @author        ChatGPT, AcesFullOfKings, TheJzoli
 // @grant         none
 // @match         https://sb.ltn.fi/*
