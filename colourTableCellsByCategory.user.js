@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name          Coloured Categories
+// @name          Coloured Categories violet
 // @description   Adds category colours to Category column sb.ltn.fi
-// @version       1.1.2
-// @author        ChatGPT, AcesFullOfKings, TheJzoli
+// @version       1.1.3
+// @author        ChatGPT, AcesFullOfKings, TheJzoli, Violet
 // @grant         none
 // @match         https://sb.ltn.fi/*
 // @updateURL     https://raw.githubusercontent.com/AcesFullOfKings/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
@@ -57,13 +57,19 @@
     rows.forEach((row) => {
       const categoryCell = row.querySelectorAll('td')[columnNumber]; // select the correct column
       let category = categoryCell.innerText.split("\n")[0]; // sometimes userscripts add a line below the category text, e.g. for a button
-      if (category.charAt(0) === "■") category = category.substring(1);
 
       if (category in COLOURS) {
+        categoryCell.style.whiteSpace = 'nowrap';
         var newSpan = document.createElement('span');
         newSpan.id = "colorSquare";
-        newSpan.innerHTML = "■"; // cute lil square
-        newSpan.setAttribute('style', 'color:' + COLOURS[category]);
+        newSpan.style.display = 'inline-block';
+        newSpan.style.position = 'relative';
+        newSpan.style.bottom = '0.15em';
+        newSpan.style.width = '0.5em';
+        newSpan.style.height = '0.5em';
+        newSpan.style.marginRight = '0.3em';
+        newSpan.style.borderRadius = '2px';
+        newSpan.style.backgroundColor = COLOURS[category];
         categoryCell.querySelector('#colorSquare')?.remove();
         categoryCell.prepend(newSpan); // add to beginning of cell
       }
