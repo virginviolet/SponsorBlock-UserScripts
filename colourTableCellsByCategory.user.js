@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Coloured Categories violet
+// @name          Coloured Categories
 // @description   Adds category colours to Category column sb.ltn.fi
 // @version       1.1.3
 // @author        ChatGPT, AcesFullOfKings, TheJzoli, Violet
