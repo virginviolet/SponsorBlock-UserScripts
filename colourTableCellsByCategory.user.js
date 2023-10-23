@@ -41,7 +41,7 @@
 
   headerCells.forEach((cell) => {
       if (!found){
-          if (cell.innerText == "Category") {
+          if (cell.innerText == 'Category') {
               found = true;
           } else {
               columnNumber += 1;
@@ -56,12 +56,12 @@
 
     rows.forEach((row) => {
       const categoryCell = row.querySelectorAll('td')[columnNumber]; // select the correct column
-      let category = categoryCell.innerText.split("\n")[0]; // sometimes userscripts add a line below the category text, e.g. for a button
+      let category = categoryCell.innerText.split('\n')[0]; // sometimes userscripts add a line below the category text, e.g. for a button
 
       if (category in COLOURS) {
         categoryCell.style.whiteSpace = 'nowrap';
         var newSpan = document.createElement('span');
-        newSpan.id = "colorSquare";
+        newSpan.id = 'colorSquare';
         newSpan.style.display = 'inline-block';
         newSpan.style.position = 'relative';
         newSpan.style.bottom = '0.15em';
