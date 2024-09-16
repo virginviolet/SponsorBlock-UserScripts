@@ -5,8 +5,8 @@
 // @author        ChatGPT, AcesFullOfKings, TheJzoli, Violet
 // @grant         none
 // @match         https://sb.ltn.fi/*
-// @updateURL     https://raw.githubusercontent.com/AcesFullOfKings/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
-// @downloadURL   https://raw.githubusercontent.com/AcesFullOfKings/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
+// @updateURL     https://raw.githubusercontent.com/virginviolet/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
+// @downloadURL   https://raw.githubusercontent.com/virginviolet/SponsorBlock-UserScripts/main/colourTableCellsByCategory.user.js
 // @icon          https://sb.ltn.fi/static/browser/logo.png
 // ==/UserScript==
 
